@@ -3,14 +3,15 @@ package org.example;
 public class Turtle extends Animal{
     private int wrinkles;
 
-    public Turtle(String name, int age, DietType dietType, int wrinkles) {
-        super(name, age, dietType = DietType.HERBIVORE);
+    public Turtle(String name, int age,  int wrinkles) {
+        super(name, age, DietType.HERBIVORE);
         this.wrinkles = wrinkles;
     }
 
     @Override
     public int calculateSpeed() {
-        return age - wrinkles / 10;
+        int basicSpeed = 10;
+        return basicSpeed + ((age - wrinkles) / 10);
     }
 
     public int getWrinkles() {

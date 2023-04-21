@@ -44,7 +44,7 @@ abstract class Animal {
                 "name = " + name +
                 ", diet type = " + dietType +
                 ", age = " + age +
-                ", speed = " + calculateSpeed() +
+                ", speed = " + calculateSpeed() + "km/h" +
                 '}';
     }
 }
